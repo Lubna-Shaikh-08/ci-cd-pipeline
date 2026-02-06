@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "my-nginx-image"
-        DOCKER_CONTAINER = "my-web-app-container"
+        DOCKER_IMAGE = "lubna-nginx-image"
+        DOCKER_CONTAINER = "lubna-web-app-container"
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/ajit010/ci-cd-pipeline.git'
+                git 'https://github.com/Lubna-Shaikh-08/ci-cd-pipeline.git'
             }
         }
 
